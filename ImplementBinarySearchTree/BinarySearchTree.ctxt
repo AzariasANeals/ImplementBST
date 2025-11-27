@@ -1,0 +1,31 @@
+#BlueJ class context
+comment0.target=BinarySearchTree
+comment1.params=
+comment1.target=BinarySearchTree()
+comment10.params=node
+comment10.target=void\ inorderRecursive(TreeNode)
+comment11.params=
+comment11.target=int[]\ inorderTraversalArray()
+comment12.params=node\ list
+comment12.target=void\ inorderToList(TreeNode,\ java.util.List)
+comment2.params=value
+comment2.target=void\ insert(int)
+comment3.params=node\ value
+comment3.target=TreeNode\ insertRecursive(TreeNode,\ int)
+comment3.text=\r\n\ \ Base\ case\:\ if\ current\ node\ is\ null,\ create\ new\ node\r\n\ \ \r\n\ \ if\ value\ <\ current\ node\ -->\ recurse\ to\ the\ left\ child\r\n\ \ \r\n\ \ if\ value\ >\ current\ node\ -->\ recurse\ to\ the\ right\ child\r\n\ \ \r\n\ \ ignore\ duplicates\r\n\ \ \r\n\ \ Each\ recursive\ call\ returns\ the\ updated\ node\ so\ that\ the\ parent\ can\ link\ to\ it.\r\n\ \ \r\n\ \ This\ inserts\ the\ value\ while\ maintaining\ BST\ properties\r\n
+comment4.params=value
+comment4.target=boolean\ search(int)
+comment4.text=\r\n\ \ 1.\ Start\ at\ root\r\n\ \ 2.\ If\ node\ is\ null\ -->\ value\ does\ not\ exist\r\n\ \ 3.\ If\ value\ \=\=\ nnode.value\ -->\ found\!\r\n\ \ 4.\ Else,\ recursively\ go\ left\ or\ right\ depending\ on\ value\r\n\ \ \r\n\ \ Time\ Complexity\:\ O(h)\ where\ h\ is\ height\ of\ tree\r\n\ \ Balanced\ BST\ -->\ O(log\ n)\r\n\ \ Skewed\ BST\ -->\ O(n)\r\n
+comment5.params=node\ value
+comment5.target=boolean\ searchRecursive(TreeNode,\ int)
+comment6.params=value
+comment6.target=void\ delete(int)
+comment6.text=\r\n\ 1.\ Start\ at\ root\ and\ search\ for\ the\ node\ to\ delete\r\n\ 2.\ Node\ not\ found\:\ return\ null.\r\n\ 3.\ Node\ found\ \r\n\ \ \ \ \ \ -\ 0\ children\:\ return\ null\ -->\ parent\ disconnects\ it\r\n\ \ \ \ \ \ -\ 1\ child\:\ return\ the\ non-null\ child\ ->\ promotes\ child\r\n\ \ \ \ \ \ -\ 2\ children\:\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ -\ Find\ the\ in-order\ successor\ (minValue\ of\ right\ subtree)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ -\ Replace\ the\ node's\ value\ with\ successor\ value\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ -\ Delete\ the\ successor\ from\ the\ right\ subtree\ (recursive\ call)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ This\ maintains\ BST\ properties\ after\ deletion\r\n
+comment7.params=node\ value
+comment7.target=TreeNode\ deleteRecursive(TreeNode,\ int)
+comment8.params=node
+comment8.target=int\ minValue(TreeNode)
+comment9.params=
+comment9.target=void\ inorderTraversal()
+comment9.text=\r\n\ 1.\ Left\ -->\ Node\ -->\ Right\ traversal\r\n\ 2.\ Prints\ values\ in\ ascending\ order\ because\ of\ BST\ property\r\n
+numComments=13

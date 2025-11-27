@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=TreeNode
+comment0.text=\r\n\ int\ value\ ->\ stores\ the\ value\ of\ the\ node\r\n\ \r\n\ TreeNode\ left,\ right\ ->\ references\ to\ the\ left\ and\ right\ child\ nodes\r\n\ \r\n\ Constructor\ ->\ initializes\ the\ node\ with\ a\ value\ and\ sets\ both\ children\ to\ null\r\n\ \r\n\ This\ class\ represents\ one\ node\ of\ the\ BST.\ Every\ node\ can\ have\ 0,\ 1,\ or\ 2\ children.\r\n
+comment1.params=value
+comment1.target=TreeNode(int)
+numComments=2
